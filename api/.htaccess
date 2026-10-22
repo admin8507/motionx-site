@@ -1,0 +1,4 @@
+Options -Indexes
+<Files "db.php">
+Require all denied
+</Files>
