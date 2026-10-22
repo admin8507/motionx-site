@@ -1,10 +1,11 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Registro de testers | Motion X</title><link rel="icon" href="/assets/logo.jpg"><link rel="stylesheet" href="/style.css"></head><body>
-<header class="nav"><a href="/" class="brand"><img src="/assets/logo.jpg" alt="Motion X"><span>MOTION<b>X</b></span></a><nav><a href="/">Inicio</a><a href="/registro/" class="btn sm">Ser tester</a></nav></header><section class="sec"><div class="box">
-<div id="formwrap"><h2>Quiero ser tester</h2><p class="center">Gana hasta $5,000 MXN por cada juego que pruebes.*</p>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Registro de testers | Motion X</title><meta name="description" content="Motion X, estudio de videojuegos de Grupo Garga."><link rel="icon" href="/assets/logo.jpg"><link rel="stylesheet" href="/style.css"></head><body>
+<header class="nav"><a href="/" class="brand"><img src="/assets/logo.jpg" alt="Motion X"><span>MOTION<b>X</b></span></a><button class="burger" aria-label="Menú" onclick="document.body.classList.toggle('menu')">☰</button><nav><a href="/juegos/">Juegos</a><a href="/servicios/">Servicios</a><a href="/estudio/">Estudio</a><a href="/contacto/">Contacto</a><a href="/login/">Entrar</a><a href="/registro/" class="btn sm">Ser tester</a></nav></header><section class="sec"><div class="box">
+<div id="formwrap"><h2>Quiero ser tester</h2><p class="center">Gana hasta $5,000 MXN por cada juego que pruebes.*</p><p class="center small">¿Ya tienes cuenta? <a class="c" href="/login/">Inicia sesión</a></p>
 <form id="f" class="form">
 <input name="nombre" placeholder="Nombre completo" required maxlength="120">
 <input name="correo" type="email" placeholder="Correo electrónico" required maxlength="160">
 <input name="whatsapp" type="tel" placeholder="WhatsApp (10 dígitos)" required pattern="[0-9+ ]{10,15}">
+<input name="password" type="password" placeholder="Crea una contraseña (mín. 8 caracteres)" required minlength="8" maxlength="72" autocomplete="new-password">
 <input name="edad" type="number" min="18" max="99" placeholder="Edad (solo mayores de 18)" required>
 <select name="dispositivo" required><option value="">Consola o dispositivo principal</option><option>PC</option><option>PlayStation</option><option>Xbox</option><option>Nintendo Switch</option><option>Android</option><option>iPhone / iPad</option><option>Otro</option></select>
 <fieldset class="chips"><legend>Géneros favoritos</legend>
@@ -13,7 +14,7 @@
 <label class="chk"><input type="checkbox" name="privacidad" value="1" required> He leído y acepto el <a href="/privacidad/" target="_blank">Aviso de privacidad</a> y los <a href="/terminos/" target="_blank">Términos del programa</a>.</label>
 <button class="btn xl">Registrarme</button><p id="msg" class="center"></p></form>
 <p class="note">*El pago depende de cada juego, de completar las pruebas y de los reportes aprobados.</p></div>
-<div id="ok" hidden><h2>¡Ya eres tester Motion X!</h2><p class="center">Te contactaremos por correo o WhatsApp cuando haya un juego para ti.</p>
+<div id="ok" hidden><h2>¡Ya eres tester Motion X!</h2><p class="center">Tu cuenta está lista. Entra al <a class="c" href="/pro/">Área Pro</a>: se desbloquea completa cuando 2 personas se registren con tu link.</p><p class="center" style="margin-top:12px"><a class="btn" href="/pro/">Ir al Área Pro</a></p>
 <div class="reflink"><p><b>Gana $2,599 MXN por cada amigo o familiar que se registre como tester con tu link</b></p>
 <input id="link" readonly><div class="cta center-row"><button class="btn" id="copy">Copiar link</button><a class="btn wa" id="wa" target="_blank">Compartir por WhatsApp</a><a class="btn fb" id="fb" target="_blank">Compartir en Facebook</a></div>
 <p class="note">Comparte tu link tú mismo; nunca te pediremos datos de otras personas. Bono sujeto a los <a href="/terminos/">Términos</a>.</p></div></div>
@@ -27,4 +28,4 @@ document.getElementById('link').value=link;const t='¡Hazte tester de videojuego
 document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(t);document.getElementById('fb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link);
 document.getElementById('formwrap').hidden=true;document.getElementById('ok').hidden=false;}catch(x){m.textContent='Error de conexión'}});
 document.getElementById('copy').onclick=()=>{const l=document.getElementById('link');l.select();navigator.clipboard&&navigator.clipboard.writeText(l.value);document.getElementById('copy').textContent='¡Copiado!'};
-</script><footer>© <script>document.write(new Date().getFullYear())</script> Motion X Studio · Grupo Garga · <a href="/terminos/">Términos</a> · <a href="/privacidad/">Aviso de privacidad</a></footer></body></html>
+</script><footer><div class="fcols"><div><b>MOTION<span class="c">X</span></b><br>Estudio de videojuegos de Grupo Garga</div><div><a href="/juegos/">Juegos</a><br><a href="/servicios/">Servicios</a><br><a href="/estudio/">Estudio</a></div><div><a href="/registro/">Programa de testers</a><br><a href="/login/">Acceso testers</a><br><a href="/pro/">Área Pro</a></div><div><a href="/contacto/">Contacto</a><br><a href="/terminos/">Términos</a><br><a href="/privacidad/">Aviso de privacidad</a></div></div><p>© 2026 Motion X Studio · Grupo Empresarial Garga de México SAS</p></footer></body></html>
